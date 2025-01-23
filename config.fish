@@ -4,20 +4,21 @@ end
 
 fish_add_path /usr/local/bin
 
-function nvm
-    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
-end
+# function nvm
+#     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+# end
 
 
 set -gx GPG_TTY (tty)
 
 ## npm
-# alias i "npm install"
-# alias d "npm run dev"
-# alias t "npm run test"
-# alias sto "npm run storybook"
-# alias r "npm run"
-# alias sd "npm run start:dev"
+alias i "npm install"
+alias d "npm run dev"
+alias t "npm run test"
+alias sto "npm run storybook"
+alias r "npm run"
+alias sd "npm run start:dev"
+alias asd "npm run api:start:dev"
 
 ## git
 alias gp "git push"
@@ -31,11 +32,11 @@ alias gpp "git pull && git push"
 
 
 ## pnpm
-alias p "pnpm"
-alias sto "pnpm storybook"
-alias d "pnpm run dev"
-alias px "pnpm dlx"
-alias b "pnpm run build"
+# alias p "pnpm"
+# alias sto "pnpm storybook"
+# alias d "pnpm run dev"
+# alias px "pnpm dlx"
+# alias b "pnpm run build"
 
 ## misc
 alias remove "rm -rf"
@@ -58,3 +59,11 @@ alias py "python3"
 
 ## zed
 alias zed "open -a /Applications/Zed.app -n"
+
+## open mert config
+alias mertconfig "code ~/.mertrc"
+
+## pnpm
+alias p "pnpm"
+
+alias fastdb "./scripts/fastdb.sh"
