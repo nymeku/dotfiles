@@ -1,0 +1,85 @@
+tpkr-full:
+  root: ~/Documents/cvdesignr
+  layout:
+    - 
+      split_strategy: "vertical"
+      root: ~/Documents/cvdesignr/tpkr-react-uikit
+      tabs:
+        -
+          layout:
+            -
+              - nvm use && npm link && npm run build:watch
+        -
+          layout:
+            -
+              - pwd
+    - 
+      split_strategy: "vertical"
+      root: ~/Documents/cvdesignr/talents-api/hades
+      layout:
+        -
+          - nvm use && npm run start:worker:dev mail
+        - 
+          - nvm use && npm run start:worker:dev cron
+    - 
+      split_strategy: "vertical"
+      tabs:
+        -
+          layout:
+            -
+              - cd talents-api/hades && nvm use && asd
+              - cd talents-api/hermes && nvm use && sd
+            - 
+              - cd tpkr-react-front && remove node_modules/.vite && nvm use && npm link @cvdesignr/tpkr-react-uikit && d
+    - 
+      split_strategy: "vertical"
+      root: ~/Documents/cvdesignr/talents-api/hades
+      layout:
+        - 
+          - stripe listen --skip-verify --forward-to http://localhost:8080/api/webhook/stripe
+    - 
+      split_strategy: "vertical"
+      root: ~/Documents/cvdesignr
+      tabs:
+        -
+          layout:
+            -
+              - cd talents-api/hades && code .
+              - cd tpkr-react-front && code . && open "http://localhost:5173"
+tpkr:
+  root: ~/Documents/cvdesignr
+  layout:
+    - 
+      split_strategy: "vertical"
+      tabs:
+        -
+          layout:
+            -
+              - cd talents-api/hades && nvm use && asd
+              - cd talents-api/hermes && nvm use && sd
+            - 
+              - cd tpkr-react-front && d
+        -
+          layout:
+            -
+              - cd talents-api/hades && code .
+        -
+          layout:
+            -
+              - cd tpkr-react-front && code .  
+cvdr:
+  root: ~/Documents/cvdesignr
+  layout:
+    - 
+      split_strategy: "vertical"
+      tabs:
+        -
+          layout:
+            -
+              - cd cvdesignr/site/app/cvdr && nvm use && npm run dev-host
+        -
+          layout:
+            -
+              - cd cvdr-redcat && nvm use && npm run api:start:dev
+            - 
+              - cd cvdr-redcat && nvm use && npm run html-server:start:dev
