@@ -67,3 +67,11 @@ alias mertconfig "code ~/.mertrc"
 alias p "pnpm"
 
 alias fastdb "./scripts/fastdb.sh"
+
+alias hades-cron 'env TYPEORM_ENTITIES="dist-cron/**/**.entity.js" TYPEORM_MIGRATIONS="dist-cron/migrations/*.js" npm run cron:start:dev --'
+alias hades-consumer 'env TYPEORM_ENTITIES="dist-consumer/**/**.entity.js" TYPEORM_MIGRATIONS="dist-consumer/migrations/*.js" npm run consumer:start:dev --'
+alias kubprod 'kubectl config use-context admin@talentpicker-production'
+alias kubstaging 'kubectl config use-context admin@talentpicker-staging'
+
+## cursor
+alias cursor 'open -a "/Applications/Cursor.app"'

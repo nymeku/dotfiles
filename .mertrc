@@ -18,9 +18,7 @@ tpkr-full:
       root: ~/Documents/cvdesignr/talents-api/hades
       layout:
         -
-          - nvm use && npm run start:worker:dev mail
-        - 
-          - nvm use && npm run start:worker:dev cron
+          - nvm use && npm run consumer:start:dev -- mail
     - 
       split_strategy: "vertical"
       tabs:
